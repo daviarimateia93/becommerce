@@ -7,19 +7,21 @@ Esse projeto foi construído com maven, vá até a pasta raiz do projeto e digit
 Nesse momento, seu projeto deve compilar e rodar todos os testes    
 Vá até a pasta raiz/target e digite no terminal:    
   
--> java -jar revolut-account-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+-> java -jar becommerce-inventory-0.0.1-SNAPSHOT.jar
 
 ** Atenção, você deve ter as variáveis JAVA e MAVEN exportadas corretamente para o SO Path    
   
   
-Swagger: http://localhost:4567/echo  
+Swagger: http://localhost:8080/swagger-ui.html  
   
   
 # racional
+  
 Embora o teste tenha citado pescaria, criamos com o nome BecommerceInventory que pode prover a API para alguma pescaria  
 Foi criado 2 dominios: Inventory e Product  
 As agregações foram feitas com String ID, para diminuir acomplamento do InventoryItem à entidade Product (para caso futuramente faça sentido criar um microservico de Products)  
-
+Pensei em fazer autenticação com jwt e configurar rapidamente o spring security, mas achei melhor ir direto ao ponto para economizar tempo  
+  
 # estrutura
 A aplicação foi dividida em 2 pacotes principais:  
   
